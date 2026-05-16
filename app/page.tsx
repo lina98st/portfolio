@@ -24,7 +24,7 @@ export default function Home() {
           </a>
         </div>
       </section>
-      <section id="skills" className="flex flex-col items-center justify-center min-h-screen text-center px-6">
+      <section id="skills" className="flex flex-col items-center justify-center py-24 text-center px-6">
        <h2 className="text-4xl font-bold">Tech Stack</h2>
        <div className="grid grid-cols-3 gap-6 mt-12">
 <div className="bg-zinc-900 p-6 rounded-2xl">
@@ -63,7 +63,7 @@ export default function Home() {
 </div>
 </div>
       </section>
-      <section id="projects" className="flex flex-col items-center justify-center min-h-screen text-center px-6">
+<section id="projects" className="flex flex-col items-center justify-center py-24 text-center px-6">
       <h2 className="text-4xl font-bold">Selected Projects</h2>
       <div className="flex flex-col gap-6 mt-12 w-full max-w-3xl">
       <div className="bg-zinc-900 p-6 rounded-2xl text-left">
@@ -81,7 +81,9 @@ A full-stack web app built on top of the TheCocktailDB REST API. The frontend us
   <div className="flex flex-wrap gap-2 mb-6">
     <span className="border border-white/20 text-sm px-3 py-1 rounded-full">React</span>
     <span className="border border-white/20 text-sm px-3 py-1 rounded-full">Node.js</span>
+        <span className="border border-white/20 text-sm px-3 py-1 rounded-full">Express.js</span>
     <span className="border border-white/20 text-sm px-3 py-1 rounded-full">MongoDB</span>
+        <span className="border border-white/20 text-sm px-3 py-1 rounded-full">JWT</span>
   </div>
   <div className="flex gap-3">
     <a href="https://github.com/lina98st/cocktail-finder" target="_blank" className="border border-white/20 text-sm px-4 py-2 rounded-full hover:bg-white/10 transition-colors">Frontend Repo</a>
