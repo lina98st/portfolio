@@ -103,6 +103,7 @@ Cross-platform mobile version of the cocktail finder, built with React Native an
   </p>
   <div className="flex flex-wrap gap-2 mb-6">
     <span className="border border-white/20 text-sm px-3 py-1 rounded-full">React Native</span>
+        <span className="border border-white/20 text-sm px-3 py-1 rounded-full">Redux</span>
   </div>
   <div className="flex gap-3">
     <a href="https://github.com/lina98st/cocktail-app-react-native" target="_blank" className="border border-white/20 text-sm px-4 py-2 rounded-full hover:bg-white/10 transition-colors">Github Repo</a>
