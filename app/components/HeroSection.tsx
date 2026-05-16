@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen text-center px-6">
+<section className="flex flex-col items-center justify-center min-h-screen text-center px-6 pt-24">
       <span className="border border-pink text-pink text-xs tracking-widest uppercase px-4 py-2 rounded-full mb-8">
         Available for projects
       </span>
