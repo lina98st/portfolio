@@ -123,9 +123,9 @@ Cross-platform mobile version of the cocktail finder, built with React Native an
   <p className="text-muted text-lg max-w-2xl mt-4">
     Over the past two years I&apos;ve focused primarily on frontend development, later expanding into mobile with React Native and fullstack with Node.js, Express and MongoDB. Now moving into Next.js and TypeScript.
   </p>
-  <p className="text-muted text-lg max-w-2xl mt-4">
-    I care about writing clean code, building interfaces that actually feel good to use, and understanding the whole stack from database to deployment. Currently completing a Full Stack &amp; Mobile Development Bootcamp at Nucamp and looking for my first role in tech.
-  </p>
+<p className="text-muted text-lg max-w-2xl mt-4">
+  I care about writing clean code, building interfaces that actually feel good to use, and understanding the whole stack from database to deployment.
+</p>
 </section>
 
     </main>
