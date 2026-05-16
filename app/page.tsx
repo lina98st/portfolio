@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-background text-foreground">
@@ -58,6 +60,54 @@ export default function Home() {
 <div className="flex flex-wrap gap-2 mt-4">
   <span className="border border-white/20 text-sm px-3 py-1 rounded-full">React Native</span>
 </div>
+</div>
+</div>
+      </section>
+      <section id="projects" className="flex flex-col items-center justify-center min-h-screen text-center px-6">
+      <h2 className="text-4xl font-bold">Selected Projects</h2>
+      <div className="flex flex-col gap-6 mt-12 w-full max-w-3xl">
+      <div className="bg-zinc-900 p-6 rounded-2xl text-left">
+  <h3 className="font-bold text-xl mb-3">Cocktail Finder</h3>
+  <Image 
+  src="/react-cocktail-finder.png" 
+  alt="Cocktail Finder" 
+  width={600} 
+  height={300} 
+  className="rounded-xl mb-4 w-full object-top max-h-48"
+/>
+  <p className="text-muted text-sm mb-4">
+    A full-stack web app built on top of the TheCocktailDB REST API, with JWT authentication and role-based access control.
+  </p>
+  <div className="flex flex-wrap gap-2 mb-6">
+    <span className="border border-white/20 text-sm px-3 py-1 rounded-full">React</span>
+    <span className="border border-white/20 text-sm px-3 py-1 rounded-full">Node.js</span>
+    <span className="border border-white/20 text-sm px-3 py-1 rounded-full">MongoDB</span>
+  </div>
+  <div className="flex gap-3">
+    <a href="https://github.com/lina98st/cocktail-finder" target="_blank" className="border border-white/20 text-sm px-4 py-2 rounded-full hover:bg-white/10 transition-colors">Frontend Repo</a>
+    <a href="https://github.com/lina98st/cocktail-finder-backend" target="_blank" className="border border-white/20 text-sm px-4 py-2 rounded-full hover:bg-white/10 transition-colors">Backend Repo</a>
+    <a href="https://cocktailfinder-alina.netlify.app/" target="_blank" className="bg-pink text-white text-sm px-4 py-2 rounded-full hover:bg-pink-light transition-colors">Live Demo</a>
+  </div>
+</div>
+      <div className="bg-zinc-900 p-6 rounded-2xl text-left">
+  <h3 className="font-bold text-xl mb-3">Cocktail Mobile App</h3>
+  <Image 
+  src="/react-cocktail-finder.png" 
+  alt="Cocktail Finder" 
+  width={600} 
+  height={300} 
+  className="rounded-xl mb-4 w-full object-cover max-h-48"
+/>
+  <p className="text-muted text-sm mb-4">
+Cross-platform mobile version of the cocktail finder, built with React Native and Redux Toolkit. Features global state management, a favorites system, native share functionality, and nested stack/tab navigation.
+  </p>
+  <div className="flex flex-wrap gap-2 mb-6">
+    <span className="border border-white/20 text-sm px-3 py-1 rounded-full">React Native</span>
+  </div>
+  <div className="flex gap-3">
+    <a href="https://github.com/lina98st/cocktail-app-react-native" target="_blank" className="border border-white/20 text-sm px-4 py-2 rounded-full hover:bg-white/10 transition-colors">Github Repo</a>
+    <a href="https://www.youtube.com/shorts/9ijJ1hSreWk" target="_blank" className="bg-pink text-white text-sm px-4 py-2 rounded-full hover:bg-pink-light transition-colors">Demo Video</a>
+  </div>
 </div>
 </div>
       </section>
