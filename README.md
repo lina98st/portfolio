@@ -2,6 +2,8 @@
 
 Personal portfolio website built with Next.js, TypeScript, and Tailwind CSS.
 
+🌐 **Live:** [alina-dev.vercel.app](https://alina-dev.vercel.app/)
+
 ## Tech Stack
 
 - [Next.js 16](https://nextjs.org)

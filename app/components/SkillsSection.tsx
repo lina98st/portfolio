@@ -2,7 +2,7 @@ export default function SkillsSection() {
   return (
 <section id="skills" className="flex flex-col items-center justify-center py-24 text-center px-6">
        <h2 className="text-4xl font-bold">Tech Stack</h2>
-       <div className="grid grid-cols-3 gap-6 mt-12">
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
 <div className="bg-zinc-900 p-6 rounded-2xl">
 <h3 className="font-bold text-left">
     Frontend

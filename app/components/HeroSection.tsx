@@ -4,7 +4,7 @@ export default function HeroSection() {
       <span className="border border-pink text-pink text-xs tracking-widest uppercase px-4 py-2 rounded-full mb-8">
         Available for projects
       </span>
-      <h1 className="text-5xl md:text-7xl font-bold leading-tight max-w-4xl">
+     <h1 className="text-4xl md:text-7xl font-bold leading-tight max-w-4xl">
         Fullstack developer. Frontend at heart.{" "}
         <span className="text-pink">
           Ships products from idea to deployment.
@@ -14,7 +14,7 @@ export default function HeroSection() {
         Fullstack developer with a strong frontend focus. I build interfaces
         that feel good to use and APIs that support them properly.
       </p>
-      <div className="flex gap-4 mt-10">
+     <div className="flex flex-col md:flex-row gap-4 mt-10">
         <a
           href="#projects"
           className="bg-pink text-white font-semibold px-8 py-3 rounded-full hover:bg-pink-light transition-colors"
