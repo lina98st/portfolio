@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Alina Schmidt — Software Developer",
   description: "Portfolio of Alina Schmidt, fullstack software developer based in Germany.",
+  openGraph: {
+    images: ["/portfolio-website.png"],
+  },
 };
 
 export default function RootLayout({
