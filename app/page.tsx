@@ -76,7 +76,7 @@ export default function Home() {
   className="rounded-xl mb-4 w-full object-top max-h-48"
 />
   <p className="text-muted text-sm mb-4">
-    A full-stack web app built on top of the TheCocktailDB REST API, with JWT authentication and role-based access control.
+A full-stack web app built on top of the TheCocktailDB REST API. The frontend uses React with dynamic routing and Formik-based form validation, including a custom ingredient parser that handles inconsistent API response structures. The backend is a Node.js / Express / MongoDB REST API with JWT authentication, role-based access control, and protected CRUD endpoints.
   </p>
   <div className="flex flex-wrap gap-2 mb-6">
     <span className="border border-white/20 text-sm px-3 py-1 rounded-full">React</span>
