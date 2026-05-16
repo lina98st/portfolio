@@ -6,7 +6,7 @@ export default function ContactSection() {
     >
       <h2 className="text-4xl font-bold">Get in touch</h2>
       <p className="text-muted text-lg mt-4 mb-10">Feel free to reach out!</p>
-      <div className="flex gap-4">
+<div className="flex flex-col md:flex-row gap-4">
         <a
           href="mailto:alinaschmidt846@proton.me"
           className="border border-pink/40 text-pink/80 px-8 py-3 rounded-full hover:border-pink hover:text-pink transition-colors"
