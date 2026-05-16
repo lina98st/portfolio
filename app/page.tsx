@@ -73,7 +73,7 @@ export default function Home() {
   alt="Cocktail Finder" 
   width={600} 
   height={300} 
-  className="rounded-xl mb-4 w-full object-top max-h-48"
+  className="rounded-xl mb-4 w-full object-cover"
 />
   <p className="text-muted text-sm mb-4">
 A full-stack web app built on top of the TheCocktailDB REST API. The frontend uses React with dynamic routing and Formik-based form validation, including a custom ingredient parser that handles inconsistent API response structures. The backend is a Node.js / Express / MongoDB REST API with JWT authentication, role-based access control, and protected CRUD endpoints.
@@ -92,11 +92,11 @@ A full-stack web app built on top of the TheCocktailDB REST API. The frontend us
       <div className="bg-zinc-900 p-6 rounded-2xl text-left">
   <h3 className="font-bold text-xl mb-3">Cocktail Mobile App</h3>
   <Image 
-  src="/react-cocktail-finder.png" 
+  src="/cocktail-react-native.png" 
   alt="Cocktail Finder" 
   width={600} 
   height={300} 
-  className="rounded-xl mb-4 w-full object-cover max-h-48"
+  className="rounded-xl mb-4 w-full object-cover"
 />
   <p className="text-muted text-sm mb-4">
 Cross-platform mobile version of the cocktail finder, built with React Native and Redux Toolkit. Features global state management, a favorites system, native share functionality, and nested stack/tab navigation.
