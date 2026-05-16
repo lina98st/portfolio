@@ -38,9 +38,9 @@ export default function RootLayout({
             <Link href="#contact" className="hover:text-white transition-colors">Contact</Link>
           </div>
           
-   <a href="#contact" className="bg-pink text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-pink-light transition-colors">
-            Hire me
-          </a>
+     <a href="#contact" className="bg-pink text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-pink-light transition-colors">
+      Get in touch
+     </a>
         </nav>
         {children}
       </body>
