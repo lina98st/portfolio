@@ -6,8 +6,8 @@ export default function Home() {
           Available for projects
         </span>
         <h1 className="text-5xl md:text-7xl font-bold leading-tight max-w-4xl">
-          Frontend developer who builds things that{" "}
-          <span className="text-pink">actually work.</span>
+        Software developer who builds things that{" "}
+       <span className="text-pink">actually work.</span>
         </h1>
         <p className="mt-6 text-muted text-lg max-w-xl">
           Self-taught fullstack developer with a strong frontend focus. I build
