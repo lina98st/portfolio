@@ -28,9 +28,9 @@ export default function ProjectsSection() {
   </div>
 </div>
   <p className="text-muted text-sm mb-4">
-    A full-stack SaaS dashboard currently in development. Built with Next.js,
-    TypeScript and PostgreSQL, focusing on clean data visualization and a
-    polished user experience.
+A full-stack SaaS dashboard currently in development. Built with Next.js,
+TypeScript, Express and PostgreSQL, focusing on clean data visualization and a
+polished user experience.
   </p>
   <div className="flex flex-wrap gap-2 mb-6">
     <span className="border border-white/20 text-sm px-3 py-1 rounded-full">Next.js</span>
