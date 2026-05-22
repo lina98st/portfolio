@@ -13,13 +13,20 @@ export default function ProjectsSection() {
     In Development
   </span>
   <h3 className="font-bold text-xl mb-3">SaaS Dashboard</h3>
+<div className="relative mb-4">
   <Image
     src="/saas-dashboard-preview.png"
     alt="SaaS Dashboard"
     width={600}
     height={300}
-    className="rounded-xl mb-4 w-full object-cover opacity-80"
+    className="rounded-xl w-full object-cover opacity-40 blur-sm"
   />
+  <div className="absolute inset-0 flex items-center justify-center">
+    <span className="text-sm font-medium tracking-widest uppercase text-white/60">
+      Coming soon
+    </span>
+  </div>
+</div>
   <p className="text-muted text-sm mb-4">
     A full-stack SaaS dashboard currently in development. Built with Next.js,
     TypeScript and PostgreSQL, focusing on clean data visualization and a
