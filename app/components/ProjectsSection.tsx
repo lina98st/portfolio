@@ -8,6 +8,38 @@ export default function ProjectsSection() {
     >
       <h2 className="text-4xl font-bold">Selected Projects</h2>
       <div className="flex flex-col gap-6 mt-12 w-full max-w-3xl">
+              <div className="bg-zinc-900 p-6 rounded-2xl text-left relative">
+  <span className="absolute top-4 right-4 bg-pink text-white text-xs px-3 py-1 rounded-full">
+    In Development
+  </span>
+  <h3 className="font-bold text-xl mb-3">SaaS Dashboard</h3>
+  <Image
+    src="/saas-dashboard-preview.png"
+    alt="SaaS Dashboard"
+    width={600}
+    height={300}
+    className="rounded-xl mb-4 w-full object-cover opacity-80"
+  />
+  <p className="text-muted text-sm mb-4">
+    A full-stack SaaS dashboard currently in development. Built with Next.js,
+    TypeScript and PostgreSQL, focusing on clean data visualization and a
+    polished user experience.
+  </p>
+  <div className="flex flex-wrap gap-2 mb-6">
+    <span className="border border-white/20 text-sm px-3 py-1 rounded-full">Next.js</span>
+    <span className="border border-white/20 text-sm px-3 py-1 rounded-full">TypeScript</span>
+    <span className="border border-white/20 text-sm px-3 py-1 rounded-full">PostgreSQL</span>
+  </div>
+  <div className="flex gap-3">
+    <a
+      href="https://github.com/lina98st/taskflow"
+      target="_blank"
+      className="border border-white/20 text-sm px-4 py-2 rounded-full hover:bg-white/10 transition-colors"
+    >
+      GitHub Repo
+    </a>
+  </div>
+</div>
         <div className="bg-zinc-900 p-6 rounded-2xl text-left">
           <h3 className="font-bold text-xl mb-3">Cocktail Finder</h3>
           <Image

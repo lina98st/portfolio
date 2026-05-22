@@ -1,9 +1,6 @@
 export default function HeroSection() {
   return (
-<section className="flex flex-col items-center justify-center min-h-screen text-center px-6 pt-24">
-      <span className="border border-pink text-pink text-xs tracking-widest uppercase px-4 py-2 rounded-full mb-8">
-        Available for projects
-      </span>
+<section className="flex flex-col items-start max-w-5xl mx-auto w-full justify-center min-h-screen text-left px-4 pt-24">
      <h1 className="text-4xl md:text-7xl font-bold leading-tight max-w-4xl">
         Fullstack developer. Frontend at heart.{" "}
         <span className="text-pink">
@@ -23,7 +20,7 @@ export default function HeroSection() {
         </a>
         <a
           href="#contact"
-          className="border border-white/20 text-white px-8 py-3 rounded-full hover:bg-white/10 transition-colors"
+            className="border border-white/20 text-white px-8 py-3 rounded-full hover:bg-white/10 transition-colors"
         >
           Let&apos;s talk
         </a>
