@@ -49,6 +49,10 @@ export default function ProjectsSection() {
               TypeScript
             </span>
 
+           <span className="border border-white/20 text-sm px-3 py-1 rounded-full">
+              Tailwind CSS
+             </span>
+
             <span className="border border-white/20 text-sm px-3 py-1 rounded-full">
               Express.js
             </span>
