@@ -33,9 +33,12 @@ TypeScript, Express and PostgreSQL, focusing on clean data visualization and a
 polished user experience.
   </p>
   <div className="flex flex-wrap gap-2 mb-6">
-    <span className="border border-white/20 text-sm px-3 py-1 rounded-full">Next.js</span>
-    <span className="border border-white/20 text-sm px-3 py-1 rounded-full">TypeScript</span>
-    <span className="border border-white/20 text-sm px-3 py-1 rounded-full">PostgreSQL</span>
+<div className="flex flex-wrap gap-2 mb-6">
+  <span className="border border-white/20 text-sm px-3 py-1 rounded-full">Next.js</span>
+  <span className="border border-white/20 text-sm px-3 py-1 rounded-full">TypeScript</span>
+  <span className="border border-white/20 text-sm px-3 py-1 rounded-full">Express.js</span>
+  <span className="border border-white/20 text-sm px-3 py-1 rounded-full">PostgreSQL</span>
+</div>
   </div>
   <div className="flex gap-3">
     <a
