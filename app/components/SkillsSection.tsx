@@ -6,7 +6,7 @@ export default function SkillsSection() {
         {[
           {
             category: "Frontend",
-            items: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Redux", "TailwindCSS", "Bootstrap"],
+            items: ["JavaScript", "TypeScript", "React", "Next.js", "TailwindCSS", "Bootstrap", "Redux"],
           },
           {
             category: "Backend",
