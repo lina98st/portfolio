@@ -72,6 +72,9 @@ polished user experience.
               React
             </span>
             <span className="border border-white/20 text-sm px-3 py-1 rounded-full">
+              Bootstrap
+            </span>
+            <span className="border border-white/20 text-sm px-3 py-1 rounded-full">
               Node.js
             </span>
             <span className="border border-white/20 text-sm px-3 py-1 rounded-full">
