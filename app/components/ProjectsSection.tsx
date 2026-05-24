@@ -54,10 +54,6 @@ export default function ProjectsSection() {
              </span>
 
             <span className="border border-white/20 text-sm px-3 py-1 rounded-full">
-              Express.js
-            </span>
-
-            <span className="border border-white/20 text-sm px-3 py-1 rounded-full">
               PostgreSQL
             </span>
           </div>
