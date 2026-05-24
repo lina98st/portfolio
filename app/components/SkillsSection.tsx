@@ -10,7 +10,7 @@ export default function SkillsSection() {
           },
           {
             category: "Backend",
-            items: ["Node.js", "Express.js", "MongoDB", "PostgreSQL"],
+            items: ["Node.js", "Express.js", "MongoDB"],
           },
           {
             category: "Mobile",
