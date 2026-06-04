@@ -23,14 +23,8 @@ export default function ProjectsSection() {
               alt="SaaS Dashboard"
               width={600}
               height={300}
-              className="rounded-xl w-full object-cover opacity-40 blur-sm"
+              className="rounded-xl w-full object-cover"
             />
-
-            <div className="absolute inset-0 flex items-center justify-center">
-              <span className="text-sm font-medium tracking-widest uppercase text-white/60">
-                Coming soon
-              </span>
-            </div>
           </div>
 
           <p className="text-muted text-sm mb-4">
