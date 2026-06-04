@@ -9,7 +9,6 @@ export default function ProjectsSection() {
       <h2 className="text-4xl font-bold">Selected Projects</h2>
 
       <div className="flex flex-col gap-6 mt-12 w-full max-w-3xl">
-        
         {/* SaaS Dashboard */}
         <div className="bg-zinc-900 p-6 rounded-2xl text-left relative">
           <span className="absolute top-4 right-4 bg-pink text-white text-xs px-3 py-1 rounded-full">
@@ -49,9 +48,9 @@ export default function ProjectsSection() {
               TypeScript
             </span>
 
-           <span className="border border-white/20 text-sm px-3 py-1 rounded-full">
+            <span className="border border-white/20 text-sm px-3 py-1 rounded-full">
               Tailwind CSS
-             </span>
+            </span>
 
             <span className="border border-white/20 text-sm px-3 py-1 rounded-full">
               PostgreSQL
@@ -83,8 +82,8 @@ export default function ProjectsSection() {
           />
 
           <p className="text-muted text-sm mb-4">
-            A full-stack web app built on top of the TheCocktailDB REST API.
-            The frontend uses React with dynamic routing and Formik-based form
+            A full-stack web app built on top of the TheCocktailDB REST API. The
+            frontend uses React with dynamic routing and Formik-based form
             validation, including a custom ingredient parser that handles
             inconsistent API response structures. The backend is a Node.js /
             Express / MongoDB REST API with JWT authentication, role-based
@@ -149,9 +148,7 @@ export default function ProjectsSection() {
 
         {/* Cocktail Mobile App */}
         <div className="bg-zinc-900 p-6 rounded-2xl text-left">
-          <h3 className="font-bold text-xl mb-3">
-            Cocktail Mobile App
-          </h3>
+          <h3 className="font-bold text-xl mb-3">Cocktail Mobile App</h3>
 
           <Image
             src="/cocktail-react-native.png"
@@ -163,9 +160,9 @@ export default function ProjectsSection() {
 
           <p className="text-muted text-sm mb-4">
             Cross-platform mobile version of the cocktail finder, built with
-            React Native and Redux Toolkit. Features global state management,
-            a favorites system, native share functionality, and nested
-            stack/tab navigation.
+            React Native and Redux Toolkit. Features global state management, a
+            favorites system, native share functionality, and nested stack/tab
+            navigation.
           </p>
 
           <div className="flex flex-wrap gap-2 mb-6">
