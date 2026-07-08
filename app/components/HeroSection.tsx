@@ -15,8 +15,8 @@ export default function HeroSection() {
         <a href="#projects" className="hero__cta hero__cta--primary">
           See my work
         </a>
-        <a href="#contact" className="hero__cta hero__cta--ghost">
-          Let&apos;s talk
+        <a href="#about" className="hero__cta hero__cta--ghost">
+          About me
         </a>
       </div>
     </section>
