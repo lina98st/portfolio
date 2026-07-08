@@ -1,23 +1,23 @@
 export default function AboutSection() {
   return (
-    <section id="about" className="py-24 px-4 max-w-5xl mx-auto">
-      <div className="grid md:grid-cols-2 gap-16 items-start">
+    <section id="about" className="about">
+      <div className="about__grid">
         <div>
-          <h2 className="text-4xl font-bold mb-6">About me</h2>
-          <p className="text-muted text-lg leading-relaxed">
+          <h2 className="about__title">About me</h2>
+          <p className="about__text">
             I'm Alina, a fullstack developer based in Germany with a strong
             passion for the frontend. I come from a background in IT business
             roles, which gives me a broader understanding of how software fits
             into real business needs.
           </p>
-          <p className="text-muted text-lg leading-relaxed mt-4">
+          <p className="about__text about__text--spaced">
             Over the past two years I've focused primarily on frontend
             development, later expanding into mobile with React Native and
-            fullstack with Node.js, Express and MongoDB. Now moving into
-            Next.js and TypeScript.
+            fullstack with Node.js, Express and MongoDB. Now moving into Next.js
+            and TypeScript.
           </p>
         </div>
-        <div className="flex flex-col gap-6 pt-2 md:pt-16">
+        <div className="about__facts">
           {[
             { label: "Based in", value: "Germany" },
             { label: "Focus", value: "Frontend · Fullstack" },
@@ -25,8 +25,8 @@ export default function AboutSection() {
             { label: "Background", value: "IT Business" },
           ].map(({ label, value }) => (
             <div key={label}>
-              <p className="text-xs text-muted uppercase tracking-widest mb-1">{label}</p>
-              <p className="text-sm">{value}</p>
+              <p className="about__fact-label">{label}</p>
+              <p className="about__fact-value">{value}</p>
             </div>
           ))}
         </div>
@@ -34,6 +34,3 @@ export default function AboutSection() {
     </section>
   );
 }
-
-
-

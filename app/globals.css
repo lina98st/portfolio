@@ -1,25 +1,171 @@
-@import "tailwindcss";
+/* ============================================
+   Tokens & Root
+   ============================================ */
 
 :root {
   --background: #0a0a0a;
   --foreground: #ffffff;
   --pink: #ff4d8d;
   --pink-light: #ff80b5;
-  --muted: #a1a1a1; 
+  --muted: #a1a1a1;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-pink: var(--pink);
-  --color-pink-light: var(--pink-light);
-  --color-muted: var(--muted);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ============================================
+   Reset & Base
+   ============================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
 }
 
 body {
+  min-height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ============================================
+   Navigation
+   ============================================ */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 2rem;
+  background: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(4px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav__logo {
+  color: var(--pink);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.nav__links {
+  display: none;
+  align-items: center;
+  gap: 2rem;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.nav__link {
+  transition: color 0.2s;
+}
+
+.nav__link:hover {
+  color: var(--foreground);
+}
+
+.nav__cta {
+  display: none;
+  background: var(--pink);
+  color: var(--foreground);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  transition: background 0.2s;
+}
+
+.nav__cta:hover {
+  background: var(--pink-light);
+}
+
+@media (min-width: 768px) {
+  .nav__links {
+    display: flex;
+  }
+
+  .nav__cta {
+    display: block;
+  }
+}
+
+/* ============================================
+   About Section
+   ============================================ */
+
+.about {
+  padding: 6rem 1rem;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about__title {
+  font-size: 2.25rem;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.about__text {
+  color: var(--muted);
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+.about__text--spaced {
+  margin-top: 1rem;
+}
+
+.about__facts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+.about__fact-label {
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.25rem;
+}
+
+.about__fact-value {
+  font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  .about__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about__facts {
+    padding-top: 4rem;
+  }
 }
