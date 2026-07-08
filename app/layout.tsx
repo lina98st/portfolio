@@ -46,9 +46,6 @@ export default function RootLayout({
               Contact
             </Link>
           </div>
-          <a href="#contact" className="nav__cta">
-            Get in touch
-          </a>
         </nav>
         {children}
       </body>
