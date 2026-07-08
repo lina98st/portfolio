@@ -1,8 +1,7 @@
 export default function ContactSection() {
   return (
     <section id="contact" className="contact">
-      <h2 className="contact__title">Get in touch</h2>
-      <p className="contact__text">Feel free to reach out!</p>
+      <h2 className="contact__title">Find me online</h2>
 
       <div className="contact__links">
         <a
