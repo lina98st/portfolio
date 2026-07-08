@@ -23,7 +23,7 @@ export default function AboutSection() {
             { label: "Focus", value: "Frontend · Fullstack" },
             {
               label: "Main Stack",
-              value: "React · Next.js · Node.js · PostgreSQL",
+              value: "React · Node.js · Express.js · PostgreSQL",
             },
             { label: "Background", value: "IT Business" },
           ].map(({ label, value }) => (
