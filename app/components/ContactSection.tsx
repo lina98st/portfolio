@@ -2,14 +2,9 @@ export default function ContactSection() {
   return (
     <section id="contact" className="contact">
       <h2 className="contact__title">Get in touch</h2>
-
       <p className="contact__text">Feel free to reach out!</p>
 
       <div className="contact__links">
-        <a href="mailto:alinaschmidt846@proton.me" className="contact__link">
-          Email me
-        </a>
-
         <a
           href="https://www.linkedin.com/in/alina-schmi/"
           target="_blank"
