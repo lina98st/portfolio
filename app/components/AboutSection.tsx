@@ -13,15 +13,18 @@ export default function AboutSection() {
           <p className="about__text about__text--spaced">
             Over the past two years I've focused primarily on frontend
             development, later expanding into mobile with React Native and
-            fullstack with Node.js, Express and MongoDB. Now moving into Next.js
-            and TypeScript.
+            fullstack with Node.js, Express and PostgreSQL. Now moving into
+            Next.js and TypeScript.
           </p>
         </div>
         <div className="about__facts">
           {[
             { label: "Based in", value: "Germany" },
             { label: "Focus", value: "Frontend · Fullstack" },
-            { label: "Stack", value: "React · Next.js · Node.js · MongoDB" },
+            {
+              label: "Main Stack",
+              value: "React · Next.js · Node.js · PostgreSQL",
+            },
             { label: "Background", value: "IT Business" },
           ].map(({ label, value }) => (
             <div key={label}>
