@@ -1,6 +1,6 @@
 # Alina Schmidt — Portfolio
 
-Personal portfolio website built with Next.js, TypeScript, and Tailwind CSS.
+Personal portfolio website built with Next.js, TypeScript, and vanilla CSS.
 
 🌐 **Live:** [alina-dev.vercel.app](https://alina-dev.vercel.app/)
 
@@ -8,7 +8,7 @@ Personal portfolio website built with Next.js, TypeScript, and Tailwind CSS.
 
 - [Next.js 16](https://nextjs.org)
 - TypeScript
-- Tailwind CSS
+- Vanilla CSS
 
 ## Getting Started
 
