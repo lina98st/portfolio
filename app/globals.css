@@ -160,6 +160,7 @@ a {
   font-size: 0.875rem;
 }
 
+
 @media (min-width: 768px) {
   .about__grid {
     grid-template-columns: 1fr 1fr;
@@ -341,22 +342,32 @@ a {
 
 .hero {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  max-width: 64rem;
+  align-items: center;
+  max-width: 72rem;
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
-  text-align: left;
-  padding: 6rem 1rem 0;
+  padding: 7rem 1rem 3rem;
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 3.5rem;
+  width: 100%;
+}
+
+.hero__content {
+  min-width: 0;
 }
 
 .hero__title {
+  margin: 0;
+  max-width: 46rem;
   font-size: 2.25rem;
   font-weight: 700;
-  line-height: 1.2;
-  max-width: 56rem;
+  line-height: 1.15;
 }
 
 .hero__title-accent {
@@ -364,10 +375,11 @@ a {
 }
 
 .hero__text {
+  max-width: 36rem;
   margin-top: 1.5rem;
   color: var(--muted);
   font-size: 1.125rem;
-  max-width: 36rem;
+  line-height: 1.6;
 }
 
 .hero__actions {
@@ -381,7 +393,15 @@ a {
   padding: 0.75rem 2rem;
   border-radius: 9999px;
   font-weight: 600;
-  transition: background 0.2s, border-color 0.2s;
+  text-align: center;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    transform 0.2s;
+}
+
+.hero__cta:hover {
+  transform: translateY(-2px);
 }
 
 .hero__cta--primary {
@@ -402,16 +422,81 @@ a {
   background: rgba(255, 255, 255, 0.1);
 }
 
-@media (min-width: 768px) {
-  .hero__title {
-    font-size: 4.5rem;
-    line-height: 1.1;
-  }
+.hero__portrait-wrap {
+  display: flex;
+  justify-content: center;
+}
 
+.hero__portrait-ring {
+  position: relative;
+  width: min(78vw, 25rem);
+  aspect-ratio: 1;
+  padding: 5px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    var(--pink),
+    var(--pink-light),
+    rgba(255, 255, 255, 0.8)
+  );
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 0 45px rgba(255, 77, 141, 0.22),
+    0 2rem 5rem rgba(0, 0, 0, 0.45);
+}
+
+.hero__portrait-ring::before {
+  content: "";
+  position: absolute;
+  inset: 12%;
+  z-index: -1;
+  border-radius: 50%;
+  background: var(--pink);
+  filter: blur(55px);
+  opacity: 0.28;
+}
+
+.hero__portrait {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 5px solid var(--background);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.35s ease;
+}
+
+.hero__portrait-ring:hover .hero__portrait {
+  transform: scale(1.025);
+}
+
+@media (min-width: 640px) {
   .hero__actions {
     flex-direction: row;
   }
 }
+
+@media (min-width: 900px) {
+  .hero__grid {
+    grid-template-columns: minmax(0, 1.35fr) minmax(19rem, 0.65fr);
+    gap: 4rem;
+  }
+
+  .hero__title {
+    font-size: clamp(3.5rem, 5.2vw, 4.75rem);
+    line-height: 1.06;
+  }
+
+  .hero__portrait-wrap {
+    justify-content: flex-end;
+  }
+
+  .hero__portrait-ring {
+    width: min(31vw, 25rem);
+  }
+}
+
 
 /* ============================================
    Contact Section
