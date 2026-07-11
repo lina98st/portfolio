@@ -220,13 +220,22 @@ a {
     box-shadow 0.25s ease;
 }
 
+.skills__card:hover {
+  transform: translateY(-6px) rotate(-0.4deg);
+  border-color: rgba(255, 77, 141, 0.4);
+  box-shadow:
+    0 1.5rem 3rem rgba(0, 0, 0, 0.28),
+    0 0 2rem rgba(255, 77, 141, 0.08);
+}
+
 .skills__card::before {
   content: "";
   position: absolute;
   top: 0;
   left: 15%;
   width: 70%;
-  height: 1px;
+  height: 3px;
+  border-radius: 999px;
   background: linear-gradient(
     90deg,
     transparent,
@@ -235,14 +244,6 @@ a {
   );
   opacity: 0;
   transition: opacity 0.25s ease;
-}
-
-.skills__card:hover {
-  transform: translateY(-6px);
-  border-color: rgba(255, 77, 141, 0.4);
-  box-shadow:
-    0 1.5rem 3rem rgba(0, 0, 0, 0.28),
-    0 0 2rem rgba(255, 77, 141, 0.08);
 }
 
 .skills__card:hover::before {
