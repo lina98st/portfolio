@@ -1,23 +1,52 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "motion/react";
 
 export default function HeroSection() {
   return (
     <section className="hero">
       <div className="hero__grid">
         <div className="hero__content">
-          <h1 className="hero__title">
+          <motion.h1
+            className="hero__title"
+            initial={{ opacity: 0, y: 60 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 1.1,
+              ease: [0.22, 1, 0.36, 1],
+            }}
+          >
             Fullstack developer. Frontend at heart.{" "}
             <span className="hero__title-accent">
               Ships products from idea to deployment.
             </span>
-          </h1>
+          </motion.h1>
 
-          <p className="hero__text">
+          <motion.p
+            className="hero__text"
+            initial={{ opacity: 0, y: 35 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.95,
+              delay: 0.35,
+              ease: [0.22, 1, 0.36, 1],
+            }}
+          >
             Fullstack developer with a strong frontend focus. I build interfaces
             that feel good to use and APIs that support them properly.
-          </p>
+          </motion.p>
 
-          <div className="hero__actions">
+          <motion.div
+            className="hero__actions"
+            initial={{ opacity: 0, y: 35 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.95,
+              delay: 0.55,
+              ease: [0.22, 1, 0.36, 1],
+            }}
+          >
             <a href="#projects" className="hero__cta hero__cta--primary">
               See my work
             </a>
@@ -25,11 +54,45 @@ export default function HeroSection() {
             <a href="#about" className="hero__cta hero__cta--ghost">
               About me
             </a>
-          </div>
+          </motion.div>
         </div>
 
-        <div className="hero__portrait-wrap">
-          <div className="hero__portrait-ring">
+        <motion.div
+          className="hero__portrait-wrap"
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            duration: 1.3,
+            delay: 0.45,
+            ease: [0.22, 1, 0.36, 1],
+          }}
+        >
+          <motion.div
+            className="hero__portrait-ring"
+            initial={{
+              scale: 0.8,
+              rotate: -8,
+            }}
+            animate={{
+              scale: 1,
+              rotate: 0,
+            }}
+            whileHover={{
+              scale: 1.04,
+              rotate: 2,
+              transition: {
+                type: "spring",
+                stiffness: 220,
+                damping: 15,
+              },
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 90,
+              damping: 16,
+              delay: 0.5,
+            }}
+          >
             <Image
               src="/Alina_Schmidt.png"
               alt="Portrait of Alina Schmidt"
@@ -38,8 +101,8 @@ export default function HeroSection() {
               priority
               className="hero__portrait"
             />
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );
