@@ -51,6 +51,14 @@ export default function ProjectsSection() {
         <div className="project">
           <h3 className="project__name">Recipe API</h3>
 
+          <Image
+            src="/recipe-api-preview.png"
+            alt="Recipe API"
+            width={600}
+            height={300}
+            className="project__image project__image--flush"
+          />
+
           <p className="project__desc">
             A RESTful backend API for managing recipes, categories, ingredients,
             users, profiles and ratings. Built with Flask, SQLAlchemy and
