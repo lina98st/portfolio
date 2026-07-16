@@ -47,6 +47,37 @@ export default function ProjectsSection() {
           </div>
         </div>
 
+        {/* Recipe API */}
+        <div className="project">
+          <h3 className="project__name">Recipe API</h3>
+
+          <p className="project__desc">
+            A RESTful backend API for managing recipes, categories, ingredients,
+            users, profiles and ratings. Built with Flask, SQLAlchemy and
+            PostgreSQL, including relational data models, database migrations,
+            CRUD endpoints and Docker based local development.
+          </p>
+
+          <div className="project__tags">
+            <span className="project__tag">Python</span>
+            <span className="project__tag">Flask</span>
+            <span className="project__tag">SQLAlchemy</span>
+            <span className="project__tag">PostgreSQL</span>
+            <span className="project__tag">Docker</span>
+          </div>
+
+          <div className="project__links">
+            <a
+              href="https://github.com/lina98st/recipe-api"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__link"
+            >
+              GitHub Repo
+            </a>
+          </div>
+        </div>
+
         {/* Cocktail Finder */}
         <div className="project">
           <h3 className="project__name">Cocktail Finder</h3>
