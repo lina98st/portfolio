@@ -72,6 +72,7 @@ export default function ProjectsSection() {
             <span className="project__tag">SQLAlchemy</span>
             <span className="project__tag">PostgreSQL</span>
             <span className="project__tag">Docker</span>
+            <span className="project__tag">pytest</span>
           </div>
 
           <div className="project__links">
