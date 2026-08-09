@@ -17,7 +17,7 @@ export default function HeroSection() {
               ease: [0.22, 1, 0.36, 1],
             }}
           >
-            Fullstack developer. Frontend at heart.{" "}
+            Fullstack developer and IT Professional. Frontend at heart.{" "}
             <span className="hero__title-accent">
               Ships products from idea to deployment.
             </span>
