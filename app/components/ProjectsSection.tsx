@@ -146,51 +146,6 @@ export default function ProjectsSection() {
             </a>
           </div>
         </div>
-
-        {/* Cocktail Mobile App */}
-        <div className="project">
-          <h3 className="project__name">Cocktail Mobile App</h3>
-
-          <Image
-            src="/cocktail-react-native.png"
-            alt="Cocktail Mobile App"
-            width={600}
-            height={300}
-            className="project__image project__image--flush"
-          />
-
-          <p className="project__desc">
-            Cross-platform mobile version of the cocktail finder, built with
-            React Native and Redux Toolkit. Features global state management, a
-            favorites system, native share functionality, and nested stack/tab
-            navigation.
-          </p>
-
-          <div className="project__tags">
-            <span className="project__tag">React Native</span>
-            <span className="project__tag">Redux</span>
-          </div>
-
-          <div className="project__links">
-            <a
-              href="https://github.com/lina98st/cocktail-app-react-native"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project__link"
-            >
-              GitHub Repo
-            </a>
-
-            <a
-              href="https://www.youtube.com/shorts/9ijJ1hSreWk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project__link project__link--primary"
-            >
-              Demo Video
-            </a>
-          </div>
-        </div>
       </div>
     </section>
   );
