@@ -6,16 +6,16 @@ export default function ProjectsSection() {
       <h2 className="projects__title">Selected Projects</h2>
 
       <div className="projects__list">
-        {/* SaaS Dashboard */}
+        {/* Task Management App */}
         <div className="project">
           <span className="project__badge">In Development</span>
 
-          <h3 className="project__name">SaaS Dashboard</h3>
+          <h3 className="project__name">Task Management App</h3>
 
           <div className="project__image-wrap">
             <Image
-              src="/saas-dashboard-preview.png"
-              alt="SaaS Dashboard"
+              src="/task-management-preview.png"
+              alt="Task Management App"
               width={600}
               height={300}
               className="project__image"
@@ -23,26 +23,42 @@ export default function ProjectsSection() {
           </div>
 
           <p className="project__desc">
-            A full-stack SaaS dashboard currently in development. Built with
-            Next.js, TypeScript, Express and PostgreSQL, focusing on clean data
-            visualization and a polished user experience.
+            A full-stack task management application featuring user
+            authentication, protected routes, a personalized dashboard and task
+            management with filtering, sorting and progress tracking. Includes
+            server-side validation and automated component tests.
           </p>
 
           <div className="project__tags">
             <span className="project__tag">Next.js</span>
             <span className="project__tag">TypeScript</span>
             <span className="project__tag">Tailwind CSS</span>
+            <span className="project__tag">Prisma</span>
             <span className="project__tag">PostgreSQL</span>
+            <span className="project__tag">Neon</span>
+            <span className="project__tag">Auth.js</span>
+            <span className="project__tag">Jest</span>
+            <span className="project__tag">React Testing Library</span>
+            <span className="project__tag">Vercel</span>
           </div>
 
           <div className="project__links">
             <a
-              href="https://github.com/lina98st/taskflow"
+              href="https://github.com/lina98st/task-management-app"
               target="_blank"
               rel="noopener noreferrer"
               className="project__link"
             >
               GitHub Repo
+            </a>
+
+            <a
+              href="https://task-management-app-cyan-kappa.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__link project__link--primary"
+            >
+              Live Demo
             </a>
           </div>
         </div>
