@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description:
     "Portfolio of Alina Schmidt, fullstack software developer based in Germany.",
   openGraph: {
-    images: ["/portfolio-website.png"],
+    images: ["/portfolio-preview.png"],
   },
 };
 
